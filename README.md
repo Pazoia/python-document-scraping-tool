@@ -77,8 +77,6 @@ $ pytest
 
 > To Do's
 
-- If data provided is not of string type return invalid data type
-
 > Done
 
 - Start project
@@ -92,3 +90,4 @@ $ pytest
 - Convert data into an iterable list of words
 - Find sentences in data
 - Make an iterable list of sentences
+- If data provided is not of string type return invalid data type
