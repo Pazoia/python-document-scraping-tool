@@ -77,8 +77,6 @@ $ pytest
 
 > To Do's
 
-- Create skeleton structure with module folders and files
-- Add data files to project
 - Get data from files
 
 > Done
@@ -88,3 +86,5 @@ $ pytest
 - Add .gitignore file
 - Initialize git repository
 - Add GitHub Actions to repository
+- Create skeleton structure with module folders and files
+- Add data files to project
