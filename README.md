@@ -1,3 +1,5 @@
+[![Scraping Tool](https://github.com/Pazoia/python-document-scraping-tool/actions/workflows/scrapingtool.yml/badge.svg)](https://github.com/Pazoia/python-document-scraping-tool/actions/workflows/scrapingtool.yml)
+
 # Document Scraping Tool
 
 ## Table of Contents
