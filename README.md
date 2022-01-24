@@ -77,8 +77,6 @@ $ pytest
 
 > To Do's
 
-- Get data from files
-
 > Done
 
 - Start project
@@ -88,3 +86,4 @@ $ pytest
 - Add GitHub Actions to repository
 - Create skeleton structure with module folders and files
 - Add data files to project
+- Get data from file function returning correct data, test passing
