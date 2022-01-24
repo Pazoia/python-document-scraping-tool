@@ -77,6 +77,8 @@ $ pytest
 
 > To Do's
 
+- If data provided is not of string type return invalid data type
+
 > Done
 
 - Start project
@@ -87,3 +89,6 @@ $ pytest
 - Create skeleton structure with module folders and files
 - Add data files to project
 - Get data from file function returning correct data, test passing
+- Convert data into an iterable list of words
+- Find sentences in data
+- Make an iterable list of sentences
