@@ -1,4 +1,4 @@
-from src.convert_data_into_list_of_sentences import SentenceFinder
+from src.sentence_filter import SentenceFinder
 
 import pytest
 
