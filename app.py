@@ -24,11 +24,7 @@ class App:
                 for word in sentence.split():
                     sanitised_word = self.sanitise_word.sanitise_word(word)
                     if self.is_isogram.is_long_isogramic_word(sanitised_word):
-                        self.results[word] = {"word_count": 1, "file": file.name, "sentence": sentence}
-    
-        for key, value in self.results.items():
-            print(key)
-            print(value)
+                        self.results[sanitised_word] = {"word_count": 1, "file": file.name, "sentence": sentence}
 
 app = App()
 app.new_app()
