@@ -82,7 +82,6 @@ $ pytest
 
 > To Do's
 
-- Create function that works out if a word is an Isogram
 - When iterating through text and sentences apply that function to word.
 - Create simple react app that iterates through results object and puts the values into a table
 
@@ -101,3 +100,4 @@ $ pytest
 - Make an iterable list of sentences
 - If data provided is not of string type return invalid data type
 - Sanitise function -> words only keep valid chars -> valid chars = letters A-Za-z.
+- Create function that works out if a word is an Isogram
