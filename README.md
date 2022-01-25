@@ -37,8 +37,9 @@ Given document **x** and document **y**
 
 - Python 3.8  
   [Installation instructions](https://www.python.org/)
-
-- Pytest 6.2
+- Pytest
+- Flask
+- SQLAlchemy
 
 ## How to run program
 
@@ -82,8 +83,7 @@ $ pytest
 
 > To Do's
 
-- When iterating through text and sentences apply that function to word.
-- Create simple react app that iterates through results object and puts the values into a table
+- Create simple flask website that puts the results into a table
 
 > Done
 
