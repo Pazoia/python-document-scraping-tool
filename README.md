@@ -28,6 +28,11 @@ Given document **x** and document **y**
 
 > You can be creative with the output, so feel free to format in whatever way you feel best fits your solution!
 
+> Below are the kinds of interesting words I am going to be searching for:
+
+> **Isograms** with a length greater than 10 chars  
+> An **Isogram** is a word in which no letter of the alphabet occurs more than once.
+
 ## Technologies
 
 - Python 3.8  
@@ -77,6 +82,10 @@ $ pytest
 
 > To Do's
 
+- Create function that works out if a word is an Isogram
+- When iterating through text and sentences apply that function to word.
+- Create simple react app that iterates through results object and puts the values into a table
+
 > Done
 
 - Start project
@@ -91,3 +100,4 @@ $ pytest
 - Find sentences in data
 - Make an iterable list of sentences
 - If data provided is not of string type return invalid data type
+- Sanitise function -> words only keep valid chars -> valid chars = letters A-Za-z.
