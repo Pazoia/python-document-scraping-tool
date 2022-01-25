@@ -1,4 +1,4 @@
-class IsIsogramicWord:
+class WordSearchFunctions:
     def __init__(self):
         pass
 
@@ -9,11 +9,9 @@ class IsIsogramicWord:
         
         lowered_word = word.lower()
         word_chars = list(lowered_word)
-        unique_chars = []
+        
         for letter in word_chars:
-            if letter in unique_chars:
+            if lowered_word.count(letter) > 1:
                 return False
-            else:
-                unique_chars.append(letter)
         
         return True
