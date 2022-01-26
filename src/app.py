@@ -1,6 +1,6 @@
 from src.data_extraction import DataExtraction
 from src.sentence_filter import SentenceFinder
-from src.word_search_functions import WordSearchFunctions
+from src.search_criteria import SearchCriteria
 from src.sanitise_words import SanitiseWord
 
 from pathlib import Path
@@ -14,7 +14,7 @@ class App:
     def new_app(self):
         self.data = DataExtraction()
         self.sentence_filter = SentenceFinder()
-        self.is_isogram = WordSearchFunctions()
+        self.is_isogram = SearchCriteria()
         self.sanitise_word = SanitiseWord()
 
         for file in self.filepath:
@@ -25,6 +25,5 @@ class App:
                     sanitised_word = self.sanitise_word.sanitise_word(word)
                     if self.is_isogram.is_long_isogramic_word(sanitised_word):
                         self.results[sanitised_word] = {"word_count": 1, "file": file.name, "sentence": sentence}
-
-app = App()
-app.new_app()
+        
+        return self.results
