@@ -48,19 +48,19 @@ Given document **x** and document **y**
 1 - To create a virtual environment on your machine follow the commands below:
 
 ```
-$ python3 -m venv <env_name>
+$ python3 -m venv venv
 ```
 
 2 - Activate the newly created environment:
 
 ```
-$ source <env_name>/bin/activate
+$ source venv/bin/activate
 ```
 
 You should see the env_name now on your terminal like in the shown example
 
 ```
-(<env_name>) [computer:~/projects/pazul-game]$
+(venv) [computer:~/projects/document-scraping-tool]$
 ```
 
 ### **Dependencies**
@@ -69,6 +69,12 @@ You should see the env_name now on your terminal like in the shown example
 
 ```
 $ pip install -r requirements.txt
+```
+
+> After installing dependencies run the code below to make sure the app is using dependencies installed in virtual environment:
+
+```
+$ deactivate && source venv/bin/activate
 ```
 
 ### **Pytest**
