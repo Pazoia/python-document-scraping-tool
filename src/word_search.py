@@ -1,4 +1,3 @@
-from unittest import result
 from src.data_extraction import DataExtraction
 from src.sentence_filter import SentenceFinder
 from src.search_criteria import SearchCriteria
