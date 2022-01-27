@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../css/Word.css";
+
 export const Word = ({
   word,
   wordCount,
@@ -8,13 +10,11 @@ export const Word = ({
 }) => {
 
   return (
-    <div className="word">
-      <ul key={word}>
-        <li>{word}</li>
-        <li>{wordCount}</li>
-        <li>{filenames}</li>
-        <li>{sentences}</li>
-      </ul>
-    </div>
+    <tr>
+      <th scope="row">{word}</th>
+      <td>{wordCount}</td>
+      <td>{filenames}</td>
+      <td>{sentences}</td>
+    </tr>
   ); 
 };

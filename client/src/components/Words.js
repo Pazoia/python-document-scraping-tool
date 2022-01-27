@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 
 import { Word } from "./Word";
+import "../css/Words.css";
 
 export const Words = () => {
 
@@ -18,9 +19,17 @@ export const Words = () => {
   }, [])
   
   return (
-    <div className="word">
-      <h1 className="title">Isogramic Words Found</h1>
-      <div className="words">
+    <table>
+      <caption>Isogramic Words Found</caption>
+      <thead>
+        <tr>
+          <th scope="col">Word</th>
+          <th scope="col">Word Count</th>
+          <th scope="col">Present in Files</th>
+          <th scope="col">Sentences Containing Word</th>
+        </tr>
+      </thead>
+      <tbody>
         {
         Object.entries(data).map(([word, wordInfo]) => {
           return (
@@ -34,7 +43,7 @@ export const Words = () => {
           )
         })
         }
-      </div>
-    </div>
+      </tbody>
+    </table>
   )
 };

@@ -83,9 +83,6 @@ $ pytest
 
 > To Do's
 
-- Create simple react website that puts the results into a table
-- Apply css to word component to display a table
-
 > Done
 
 - Start project
@@ -103,3 +100,5 @@ $ pytest
 - Sanitise function -> words only keep valid chars -> valid chars = letters A-Za-z.
 - Create function that works out if a word is an Isogram
 - React app displays word and word information
+- Apply css to word component to display a table
+- Create simple react website that puts the results into a table
