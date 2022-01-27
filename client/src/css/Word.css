@@ -3,9 +3,8 @@ td {
   padding: 20px;
 }
 
-tr {
-  border-top: 1px;
-  border-style: double;
+tbody tr {
+  border-top-style: double;
 }
 
 th {
