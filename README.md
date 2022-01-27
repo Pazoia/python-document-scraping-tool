@@ -41,7 +41,7 @@ Given document **x** and document **y**
 - Flask
 - React
 
-## How to run program
+## How to run app
 
 > It's good practice to work on a virtual environment with it's own depencies and packages.
 
@@ -79,11 +79,42 @@ $ pip install -r requirements.txt
 $ pytest
 ```
 
+### **Flask**
+
+> Run the following command in your command line to start the flask server:  
+> Make sure you are in the root folder of the project
+
+```
+$ python server.py
+```
+
+### **React app frontend**
+
+> Open a new terminal in the root folder of the project.  
+> Run the following command in your command line to navigate to the Client folder:
+
+```
+$ cd client
+```
+
+> In client folder install react app dependencies with the command below:
+
+```
+$ npm install
+```
+
+> Start the React app with the command below:
+
+```
+$ npm start
+```
+
+> Make sure that both flask server and React app are running  
+> Visit http://localhost:3000 et Voila, the app is running.
+
 ## Project Status
 
 > To Do's
-
-- Break word_search.py into smaller functions
 
 > Done
 
@@ -104,3 +135,4 @@ $ pytest
 - React app displays word and word information
 - Apply css to word component to display a table
 - Create simple react website that puts the results into a table
+- Break word_search.py into smaller functions
