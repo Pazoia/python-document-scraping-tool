@@ -1,13 +1,13 @@
 from flask import Flask
-from src.app import App
+from src.word_search import WordSearch
 
 app = Flask(__name__)
 
+word_search = WordSearch()
+
 @app.route("/words")
 def words():
-    results = App()
-    return results.new_app()
-
+    return word_search.search()
 
 if __name__ == "__main__":
     app.run(debug=True)
