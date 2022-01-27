@@ -39,7 +39,7 @@ Given document **x** and document **y**
   [Installation instructions](https://www.python.org/)
 - Pytest
 - Flask
-- SQLAlchemy
+- React
 
 ## How to run program
 
@@ -83,7 +83,8 @@ $ pytest
 
 > To Do's
 
-- Create simple flask website that puts the results into a table
+- Create simple react website that puts the results into a table
+- Apply css to word component to display a table
 
 > Done
 
@@ -101,3 +102,4 @@ $ pytest
 - If data provided is not of string type return invalid data type
 - Sanitise function -> words only keep valid chars -> valid chars = letters A-Za-z.
 - Create function that works out if a word is an Isogram
+- React app displays word and word information
