@@ -83,6 +83,8 @@ $ pytest
 
 > To Do's
 
+- Break word_search.py into smaller functions
+
 > Done
 
 - Start project
