@@ -13,16 +13,19 @@ class WordSearch:
         self.sentence_filter = SentenceFinder()
         self.is_isogram = SearchCriteria()
         self.sanitise_word = SanitiseWord()
+        self.results = {}
 
+    def find_word(self, sentence, filename):
+        for word in sentence.split():
+            sanitised_word = self.sanitise_word.sanitise_word(word)
+            if self.is_isogram.is_long_isogramic_word(sanitised_word):
+                self.results[sanitised_word] = {"word_count": 1, "file": filename, "sentence": sentence}
+    
     def search(self):
-        results = {}
         for file in self.filepath:
             file_data = self.data.get_data_from_file(file)
             sentences = self.sentence_filter.find_sentences_in_data(file_data)
-            for sentence in sentences:
-                for word in sentence.split():
-                    sanitised_word = self.sanitise_word.sanitise_word(word)
-                    if self.is_isogram.is_long_isogramic_word(sanitised_word):
-                        results[sanitised_word] = {"word_count": 1, "file": file.name, "sentence": sentence}
+            
+            list(map(lambda sentence: self.find_word(sentence, file.name), sentences))
         
-        return results
+        return self.results
