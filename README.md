@@ -6,7 +6,7 @@
 
 - [Client requirements](#client-requirements)
 - [Technologies](#technologies)
-- [How to run program](#how-to-run-program)
+- [How to run app](#how-to-run-app)
 - [Project Status](#project-status)
 
 ## Client requirements
@@ -15,7 +15,7 @@
 
 > We’ve attached a few documents, each of which has lots of words and sentences. For this task, produce a list of the most frequent interesting words, along with a summary table showing where those words appear (sentences and documents).
 
-> This task can be tackled in any way you feel best solves the problem; feel free to show off your prowess! Our only “rule” is that you write your solution in Python, since that’s the main language we use at Eigen. Otherwise, please include instructions to help us get up and running with your code!
+> This task can be tackled in any way you feel best solves the problem; feel free to show off your prowess! Our only “rule” is that you write your solution in Python, since that’s the main language we use. Otherwise, please include instructions to help us get up and running with your code!
 
 **Input**  
 Given document **x** and document **y**
