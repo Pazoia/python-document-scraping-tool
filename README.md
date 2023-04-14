@@ -2,6 +2,10 @@
 
 # Document Scraping Tool
 
+## Below is an image of what gets returned from running the app with the current documents.
+
+![image](result.png)
+
 ## Table of Contents
 
 - [Client requirements](#client-requirements)
